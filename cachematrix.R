@@ -1,4 +1,7 @@
-makeCacheMatrix <- function(x = matrix()) {
+
+
+makeCacheMatrix <- function(x = matrix()) 
+  {
   ## set the value of the matrix
   i<- NULL
   set <- function(y) {
@@ -19,12 +22,14 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
 
-cacheSolve <- function(x, ...) {
-  ## Return a matrix that is the inverse of 'x'
-  
-  ## get the inverse of the matrix        
+
+
+cacheSolve <- function(x, ...)
+  {
+{
+        ## Return a matrix that is the inverse of 'x'
+  # get the inverse of the matrix        
   i <- x$getinverse()
   
   ## check if there is the matrix   
@@ -38,6 +43,7 @@ cacheSolve <- function(x, ...) {
   ## set the inverse of the matrix 
   x$setinverse(i)
   i
+}
 }
 
 
